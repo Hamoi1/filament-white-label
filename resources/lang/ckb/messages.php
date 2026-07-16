@@ -1,0 +1,88 @@
+<?php
+
+return [
+    'navigation_label' => 'نیشانەی تایبەت (White Label)',
+    'title' => 'نیشانەی تایبەت (White Label)',
+    'heading' => 'نیشانەی تایبەت (White Label)',
+    'subheading' => 'پەنێڵەکەت براند بکە — لۆگۆکان، ڕەنگەکان، فۆنتەکان، شێوازی ڕێکخستن، و زیاتر.',
+
+    'tabs' => [
+        'brand' => 'براند',
+        'colors' => 'ڕەنگەکان',
+        'typography' => 'تایپۆگرافی',
+        'layout' => 'ڕووکار',
+        'behavior' => 'ڕەفتار',
+        'footer' => 'بەشی خوارەوە',
+        'advanced' => 'پێشکەوتوو',
+    ],
+
+    'fields' => [
+        'brand_name' => 'ناوی ئەپ / براند',
+        'brand_logo' => 'لۆگۆ (ڕووناک)',
+        'dark_brand_logo' => 'لۆگۆ (تاریک)',
+        'brand_logo_height' => 'بەرزی لۆگۆ',
+        'favicon' => 'ئایکۆنی وێبسایت (Favicon)',
+        'font_family' => 'جۆری فۆنت',
+        'color_primary' => 'سەرەکی',
+        'color_gray' => 'خۆڵەمێشی',
+        'color_danger' => 'مەترسی',
+        'color_warning' => 'ئاگادارکردنەوە',
+        'color_success' => 'سەرکەوتن',
+        'color_info' => 'زانیاری',
+        'top_navigation' => 'ڕێنیشاندەری سەرەوە',
+        'topbar' => 'تووڵامرازی سەرەوە',
+        'breadcrumbs' => 'بەستەرەکانی ڕێڕەو',
+        'sidebar_collapsible_on_desktop' => 'لای تەنیشت بچووک دەکرێتەوە لەسەر کۆمپیوتەر',
+        'sidebar_fully_collapsible_on_desktop' => 'لای تەنیشت بەتەواوی بچووک دەکرێتەوە',
+        'collapsible_navigation_groups' => 'گرووپەکانی ڕێنیشاندەری بچووککراوە',
+        'sidebar_width' => 'پانی لای تەنیشت',
+        'max_content_width' => 'ئەوپەڕی پانی ناوەڕۆک',
+        'spa' => 'دۆخی SPA',
+        'spa_prefetching' => 'پێش-بارکردنی SPA',
+        'unsaved_changes_alerts' => 'ئاگادارکردنەوەکانی گۆڕانکارییە پاشەکەوت نەکراوەکان',
+        'database_notifications' => 'ئاگانامەکانی داتابەیس',
+        'dark_mode' => 'ڕێگەدان بە دۆخی تاریک',
+        'footer_enabled' => 'پیشاندانی بەشی خوارەوە',
+        'footer_text' => 'دەقی بەشی خوارەوە (HTML ڕێگەپێدراوە)',
+        'custom_css' => 'CSS ی تایبەت',
+    ],
+
+    'helpers' => [
+        'brand_logo_height' => 'درێژی CSS، بۆ نموونە 2rem یان 40px.',
+        'sidebar_width' => 'درێژی CSS، بۆ نموونە 18rem.',
+        'custom_css' => 'دەخرێتە ناو هەموو پەڕەکانی پەنێڵەکە. @import و javascript: لادەبرێن.',
+        'footer_text' => 'لە خوارەوەی پەنێڵەکە پیشان دەدرێت کاتێک چالاک کرابێت.',
+        'colors' => 'بە بەتاڵی جێی بهێڵە بۆ هێشتنەوەی ڕەنگە بنەڕەتییەکانی پەنێڵەکە.',
+        'database_notifications' => 'پێویستی بە خشتەی ئاگانامەکانی (notifications) لاراڤێل و مۆدێلی بەکارهێنەری Notifiable هەیە.',
+        'spa_prefetching' => 'تەنیا بەردەستە کاتێک دۆخی SPA چالاک کرابێت.',
+        'font_family' => 'هەر هەڵبژاردەیەک بە شێوازی فۆنتەکەی خۆی پیشان دەدرێت.',
+    ],
+
+    'checks' => [
+        'notifications_table_missing' => 'خشتەی ئاگانامەکان (notifications) بوونی نییە. فەرمانی `php artisan notifications:table` پاشان `php artisan migrate` جێبەجێ بکە پێش چالاککردنی ئاگانامەکانی داتابەیس.',
+        'auth_not_notifiable' => 'پێویستە مۆدێلی بەکارهێنەری پەنێڵەکەت خەسڵەتی Illuminate\Notifications\Notifiable بەکاربهێنێت پێش چالاککردنی ئاگانامەکانی داتابەیس.',
+        'database_notifications_disabled' => 'ئاگانامەکانی داتابەیس ناچالاک کران چونکە ژینگە (environment) ئامادە نییە.',
+        'database_notifications_unavailable_title' => 'ئاگانامەکانی داتابەیس بەردەست نین',
+        'spa_prefetch_requires_spa' => 'پێش-بارکردنی SPA ناچالاک کرا چونکە دۆخی SPA ناچالاکە.',
+        'settings_table_missing' => 'خشتەی filament_white_label_settings بوونی نییە. فەرمانی `php artisan migrate` جێبەجێ بکە بۆ دروستکردنی.',
+        'settings_table_missing_title' => 'ناتوانرێت ڕێکخستنەکانی نیشانەی تایبەت پاشەکەوت بکرێت',
+        'panel_missing' => 'هیچ پەنێڵێکی چالاکی Filament نەدۆزرایەوە.',
+        'load_failed_title' => 'نەتوانرا ڕێکخستنەکانی نیشانەی تایبەت باربکرێت',
+        'load_failed_body' => 'لەبری ئەوە ڕێکخستنە بنەڕەتییەکان بارکران. سەەیری لۆگی ئەپڵیکەیشنەکە بکە بۆ زانیاری زیاتر.',
+        'save_failed_title' => 'نەتوانرا ڕێکخستنەکانی نیشانەی تایبەت پاشەکەوت بکرێت',
+        'save_failed_body' => 'گۆڕانکارییەکانت پاشەکەوت نەکران. سەەیری لۆگی ئەپڵیکەیشنەکە بکە بۆ زانیاری زیاتر.',
+        'setting_adjusted_title' => 'ڕێکخستنەکە دەستکاری کرا بۆ سەلامەتی',
+    ],
+
+    'actions' => [
+        'save' => 'پاشەکەوتکردنی گۆڕانکارییەکان',
+        'saved' => 'ڕێکخستنەکانی نیشانەی تایبەت پاشەکەوت کران',
+    ],
+
+    'width' => [
+        'default' => 'بنەڕەتی پەنێڵ',
+        '7xl' => '7xl',
+        'full' => 'پڕ',
+        'screen' => 'شاشە',
+    ],
+];
