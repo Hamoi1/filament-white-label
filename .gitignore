@@ -4,7 +4,6 @@
 /.phpunit.result.cache
 /phpunit.xml
 /.idea
+/.vscode
 *.swp
 .DS_Store
-config.bat
-node_modules
